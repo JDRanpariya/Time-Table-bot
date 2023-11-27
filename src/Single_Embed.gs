@@ -5,7 +5,7 @@ function runPostmanS() {
 
 
   /// Gets the total number of sheets and sets the last sheet as active sheet
-  var logbook = SpreadsheetApp.openById('1Fjj_uHKaCycJPcUYFWkuHgXOf7JahrlWoxjQmpCE2jk');
+  var logbook = SpreadsheetApp.openById('Your Sheet ID');
   var totalSheets = logbook.getNumSheets();
   var lastSheet = logbook.getSheets()[totalSheets-1];
   var currentSheet = SpreadsheetApp.setActiveSheet(lastSheet);
@@ -35,7 +35,7 @@ function runPostmanS() {
   //////////////////////////////////////////////////  POSTing to the Discord Webhook  //////////////////////////////////////////////////
 
 
-  var discordWebhook = "https://discord.com/api/webhooks/871975368440033340/LumCkm22U9JVgaTMJnfmv9p1TcKYgfCuD8YeJuwxZJqGG7xAr94z0ennO_rQFMlzrTWn";
+  var discordWebhook = "Your Token";
 
   /// Setting up the POST request payload
   var payload = JSON.stringify({

@@ -2,7 +2,7 @@ function runPostmanMultiple() {
 
   
 
-  var discordUrl = "https://discord.com/api/webhooks/871975368440033340/LumCkm22U9JVgaTMJnfmv9p1TcKYgfCuD8YeJuwxZJqGG7xAr94z0ennO_rQFMlzrTWn";
+  var discordUrl = "Your Token";
 
   var activeSheet = SpreadsheetApp.getActiveSheet();
   console.log(activeSheet.getSheetName());

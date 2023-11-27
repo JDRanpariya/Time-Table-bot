@@ -8,8 +8,7 @@ function runPostman() {
 
 
   /// Gets the total number of sheets and sets the last sheet as active sheet
-  var logbook = SpreadsheetApp.openById('1bgmmmPkw59_h6bdMCtMOVwu1Z7SFwWgMVbP8957wDhk');
-  // var logbook = SpreadsheetApp.openById('1Fjj_uHKaCycJPcUYFWkuHgXOf7JahrlWoxjQmpCE2jk');
+  var logbook = SpreadsheetApp.openById('Your Sheet ID');
   var totalSheets = logbook.getNumSheets();
   var lastSheet = logbook.getSheets()[totalSheets-1];
   SpreadsheetApp.setActiveSheet(lastSheet);
@@ -81,7 +80,7 @@ function runPostman() {
 
     /// Setting up PUT request headers 
     var myHeaders = {
-      'Authorization': "Bearer FMMz0JHMhkqydProoDSqiNLHwh10mPREfTD2eDDn"
+      'Authorization': "Bearer <Token>"
     };
 
 
@@ -199,7 +198,7 @@ function runPostman() {
 
 
   /// Sending a request to display the timetable/holiday banner
-  var discordWebhookURL = "https://discord.com/api/webhooks/871975368440033340/LumCkm22U9JVgaTMJnfmv9p1TcKYgfCuD8YeJuwxZJqGG7xAr94z0ennO_rQFMlzrTWn";
+  var discordWebhookURL = "Web hook Url";
   var response = UrlFetchApp.fetch(discordWebhookURL, params);
 
 
